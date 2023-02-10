@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-gray-500">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="dark-light mt-16 px-8">
+        <h2 class="mt-0 mb-2 text-center text-4xl font-medium leading-tight">
+          Dark / Light Mode
+        </h2>
+        <div
+          class="themedContainer mx-auto max-w-[50rem] rounded-xl bg-gray-200 shadow-md dark:bg-gray-800"
+        >
+          <div class="mx-8 pt-4 text-end">
+            <div
+              class="relative mr-2 inline-block w-10 select-none align-middle transition duration-200 ease-in"
+            >
+              <input
+                type="checkbox"
+                name="toggle"
+                id="dark-toggle"
+                class="peer absolute block h-6 w-6 cursor-pointer appearance-none rounded-full border-4 bg-white checked:right-0 checked:border-green-400"
+              />
+              <label
+                for="toggle"
+                class="block h-6 cursor-pointer overflow-hidden rounded-full bg-gray-300 peer-checked:bg-green-400"
+              ></label>
+            </div>
+            <label
+              for="toggle"
+              class="theme-text text-bold font-bold tracking-wider text-gray-700 dark:text-white"
+              >LIGHT</label
+            >
+          </div>
+          <div
+            class="z-20 mx-auto w-full py-12 px-4 text-center sm:px-6 lg:py-16 lg:px-8"
+          >
+            <h2
+              class="themedHeader text-3xl font-extrabold text-black dark:text-white sm:text-4xl"
+            >
+              <span class="block"> Hello Legend!! </span>
+              <span class="block text-indigo-500">
+                You're on the right Track
+              </span>
+            </h2>
+            <p class="mx-auto mt-4 max-w-md text-xl text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+              necessitatibus eos consequuntur?
+            </p>
+            <div class="lg:mt-0 lg:flex-shrink-0">
+              <div class="mt-12 inline-flex rounded-md shadow">
+                <button
+                  type="button"
+                  class="w-full rounded-lg bg-indigo-600 py-4 px-6 text-center text-base font-semibold text-white shadow-md transition duration-200 ease-in hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-indigo-200"
+                >
+                  Get started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="multiple">
+        <div class="wrapper mt-16 px-8">
+          <h2 class="mt-0 mb-2 text-center text-4xl font-medium leading-tight">
+            Multi-theme Mode
+          </h2>
+          <div class="mx-auto max-w-[50rem] rounded-xl bg-skin-fill shadow-md">
+            <div class="px-4 pt-4">
+              <label
+                for="themes"
+                class="mb-2 block text-center text-sm font-medium text-skin-base"
+                >CHOOSE A THEME</label
+              >
+              <select
+                id="themes"
+                class="block w-full cursor-pointer rounded-lg border p-2.5 text-sm outline-transparent"
+              >
+                <option value="light" selected>Default (Light)</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="purple">Purple</option>
+              </select>
+            </div>
+            <div
+              class="relative mx-auto max-w-4xl overflow-hidden sm:rounded-2xl"
+            >
+              <div
+                class="relative mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8"
+              >
+                <h2 class="text-3xl font-extrabold text-skin-base sm:text-4xl">
+                  <span class="block">Consistency matters.</span>
+                  <span class="block">Practice makes perfect.</span>
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-skin-muted">
+                  Ac euismod vel sit maecenas id pellentesque eu sed
+                  consectetur. Malesuada adipiscing sagittis vel nulla nec.
+                </p>
+                <div
+                  class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center rounded-md border border-transparent bg-skin-button px-4 py-3 text-base font-medium text-skin-inverted shadow-sm sm:px-8"
+                  >
+                    Get started
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

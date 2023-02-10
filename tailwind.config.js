@@ -1,14 +1,22 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-     screens: {
-      sm: "480px",
-      md: "768px",
-      mg: "976px",
-      xl: "1440px"
+    extend: {
+      textColor: {
+        skin: {
+          base: "var(--color-text-base)",
+          muted: "var(--color-text-muted)",
+          inverted: "var(--color-text-inverted)",
+        },
+      },
+      backgroundColor: {
+        skin: {
+          fill: "var(--color-fill)",
+          button: "var(--color-button-base)",
+        },
+      },
     },
-    extend: {},
   },
+  darkMode: "class",
   plugins: [],
-}
-
+};
